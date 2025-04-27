@@ -94,3 +94,78 @@ python main.py tags
 
 - `-f, --file`: Notes storage file (default: ~/.simple_notes.json)
 
+## 📝 Examples
+
+### Create a note:
+```bash
+# Create a note and open editor for content
+python main.py new "Meeting Notes"
+```
+
+```bash
+# Create a note with inline content
+python main.py new "Shopping List" -c "Milk, Eggs, Bread"
+```
+
+```bash
+# Create a note with tags
+python main.py new "Project Ideas" -t "work,creative,future"
+```
+
+### List notes:
+```bash
+# List all notes
+python main.py list
+```
+
+```bash
+# List notes with a specific tag
+python main.py list -t work
+```
+
+```bash
+# Search notes
+python main.py list -s "meeting"
+```
+
+```bash
+# Combine tag and search
+python main.py list -t work -s "project"
+```
+
+### View a note:
+```bash
+python main.py view 1
+```
+
+### Edit a note:
+```bash
+# Edit a note (opens in editor)
+python main.py edit 1
+```
+
+```bash
+# Change just the title
+python main.py edit 1 -i "Updated Title"
+```
+
+```bash
+# Change tags
+python main.py edit 1 -t "important,urgent"
+```
+
+```bash
+# Append content
+python main.py edit 1 -c "Additional information" -a
+```
+
+### Delete a note:
+```bash
+python main.py delete 1
+```
+
+### List all tags:
+```bash
+python main.py tags
+```
+
