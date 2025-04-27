@@ -26,3 +26,18 @@ cd simple-notes
 chmod +x main.py
 ```
 
+## 🔍 Usage
+
+```bash
+python main.py <command> [options]
+```
+
+## ⚙️ Commands
+
+- `new`: Create a new note
+- `list`: List notes
+- `view`: View a specific note
+- `edit`: Edit a note
+- `delete`: Delete a note
+- `tags`: List all tags
+
