@@ -169,3 +169,15 @@ python main.py delete 1
 python main.py tags
 ```
 
+## 💡 Tips
+
+- Use tags consistently to organize your notes effectively
+- The search function checks both titles and content
+- Use the `-a` flag when editing to add information without replacing existing content
+- You can change your default editor by setting the `EDITOR` environment variable
+- For daily journaling, create notes with date-based titles like "Journal 2023-09-15"
+- Back up your notes file (~/.simple_notes.json) regularly
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
