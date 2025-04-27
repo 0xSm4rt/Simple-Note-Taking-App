@@ -41,3 +41,56 @@ python main.py <command> [options]
 - `delete`: Delete a note
 - `tags`: List all tags
 
+## 📋 Command Options
+
+### Create a note:
+```bash
+python main.py new <title> [options]
+```
+
+#### Options:
+
+- `-c, --content`: Note content (if not provided, your default text editor will open)
+- `-t, --tags`: Comma-separated list of tags
+
+### List notes:
+```bash
+python main.py list [options]
+```
+
+#### Options:
+
+- `-t, --tag`: Filter by tag
+- `-s, --search`: Search term in title and content
+
+### View a note:
+```bash
+python main.py view <id>
+```
+
+### Edit a note:
+```bash
+python main.py edit <id> [options]
+```
+
+#### Options:
+
+- `-i, --title`: New title
+- `-c, --content`: New content (if not provided, your default text editor will open)
+- `-t, --tags`: New comma-separated list of tags
+- `-a, --append`: Append content instead of replacing
+
+### Delete a note:
+```bash
+python main.py delete <id>
+```
+
+### List tags:
+```bash
+python main.py tags
+```
+
+### Global options:
+
+- `-f, --file`: Notes storage file (default: ~/.simple_notes.json)
+
